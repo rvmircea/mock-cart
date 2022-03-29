@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+body{
+    background-color: rgb(243, 243, 243);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#lista{
+    max-width: fit-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    box-shadow: 1px 2px rgb(226, 226, 226);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li > div{
+    margin-right: 40px;
+    margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+#price{
+    color: rgb(37, 139, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#btn-add{
+    margin-left: 10px;
+    background-color: rgb(52, 202, 52);
+    color: white;
+}
+
+#btn-add:hover{
+    cursor: pointer;
+    background-color: rgb(67, 228, 67);
+}
+
+#btn-remove{
+    margin-left: 10px;
+    background-color: rgb(209, 55, 55);
+    color: white;
+}
+
+#btn-remove:hover{
+    cursor: pointer;
+    background-color: rgb(241, 38, 38);
+}
+
+#container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#info{
+    background-color: rgb(194, 194, 194);
+    color: white;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+#info:hover{
+    cursor: pointer;
+    background-color: rgb(204, 204, 204);
+}
+
+
+#cart {
+    background-color: rgb(233, 233, 233);
+    padding: 0px 20px;
+    border: 2px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    box-shadow: 1px 2px rgb(226, 226, 226);
+}
+
+#total {
+    text-align: end;
+}
+
+#infoText{
+    position: absolute;
+    background-color: white;
+    border: 2px solid rgb(212, 212, 212);
+    padding: 5px;
+}
+
+input{
+    margin-left: 10px;
 }
